@@ -9,9 +9,9 @@ Contributors: specialk
 Author URI: https://plugin-planet.com/
 Donate link: https://monzillamedia.com/donate.html
 Requires at least: 4.6
-Tested up to: 6.6
-Stable tag: 3.4.6
-Version:    3.4.6
+Tested up to: 6.7
+Stable tag: 3.4.7
+Version:    3.4.7
 Requires PHP: 5.6.20
 Text Domain: dashboard-widgets-suite
 Domain Path: /languages
@@ -23,7 +23,7 @@ Adds 9 awesome widgets to your WP Dashboard. Includes User Notes, Social Buttons
 
 == Description ==
 
-> 1 Plugin. 9 Widgets. Awesome Dashboard.
+1 Plugin. 9 Widgets. Awesome Dashboard.
 
 _Add new widgets to your WordPress Dashboard. Streamline your workflow and optimize productivity._
 
@@ -414,13 +414,11 @@ Send any questions or feedback via my [contact form](https://plugin-planet.com/s
 __Thank you__ for using Dashboard Widgets Suite! If you like the plugin, please show support with a [5-star rating &raquo;](https://wordpress.org/support/plugin/dashboard-widgets-suite/reviews/?rate=5#new-post)
 
 
-**3.4.6 (2024/06/19)**
+**3.4.7 (2024/10/03)**
 
-* Fixes bug with `dismiss_notice_link`
-* Adds option for "Add Note" location
 * Updates plugin settings page
 * Updates default translation template
-* Tests on WordPress 6.6 (beta)
+* Tests on WordPress 6.7 (beta)
 
 
 Full changelog @ [https://plugin-planet.com/wp/changelog/dashboard-widgets-suite.txt](https://plugin-planet.com/wp/changelog/dashboard-widgets-suite.txt)

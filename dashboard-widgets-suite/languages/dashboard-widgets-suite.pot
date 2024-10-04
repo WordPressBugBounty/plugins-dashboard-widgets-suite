@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dashboard Widgets Suite\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-19 20:54+0000\n"
+"POT-Creation-Date: 2024-10-03 22:56+0000\n"
 "POT-Revision-Date: Wed Aug 10 2016 17:30:58 GMT-0700 (PDT)\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
@@ -95,6 +95,10 @@ msgstr ""
 msgid "allow_url_include: "
 msgstr ""
 
+#: inc/settings-reset.php:50
+msgid "and"
+msgstr ""
+
 #: dashboard-widgets.php:326
 msgid "and try again."
 msgstr ""
@@ -111,6 +115,14 @@ msgstr ""
 msgid "Apache Modules: "
 msgstr ""
 
+#: inc/settings-reset.php:52
+msgid "Apply code"
+msgstr ""
+
+#: inc/settings-reset.php:52
+msgid "at checkout. Sale ends 12/21/24."
+msgstr ""
+
 #: inc/settings-register.php:29
 msgid "Automatically use the logged-in username for notes"
 msgstr ""
@@ -119,12 +131,12 @@ msgstr ""
 msgid "Bit"
 msgstr ""
 
-#: widgets/widget-system-info.php:314
-msgid "Browser: "
+#: inc/settings-reset.php:51
+msgid "books"
 msgstr ""
 
-#: inc/settings-reset.php:48
-msgid "Buy one get one FREE with code"
+#: widgets/widget-system-info.php:314
+msgid "Browser: "
 msgstr ""
 
 #: widgets/widget-notes-user.php:202 inc/resources-enqueue.php:181
@@ -317,7 +329,7 @@ msgstr ""
 msgid "Disallow File Edit: "
 msgstr ""
 
-#: inc/settings-reset.php:125
+#: inc/settings-reset.php:127
 msgid "Dismiss"
 msgstr ""
 
@@ -492,6 +504,10 @@ msgstr ""
 msgid "Facebook"
 msgstr ""
 
+#: inc/settings-reset.php:47
+msgid "Fall Sale!"
+msgstr ""
+
 #: widgets/widget-control-panel.php:23 inc/settings-register.php:42 
 #: inc/widgets-enable.php:89 inc/settings-display.php:17
 msgid "Feed Box"
@@ -545,10 +561,6 @@ msgstr ""
 
 #: dashboard-widgets.php:290
 msgid "Get Widgets Suite Pro!"
-msgstr ""
-
-#: inc/settings-reset.php:50
-msgid "Get&nbsp;plugins&nbsp;&raquo;"
 msgstr ""
 
 #: dashboard-widgets.php:291
@@ -814,10 +826,6 @@ msgstr ""
 msgid "open_basedir: "
 msgstr ""
 
-#: inc/settings-reset.php:49
-msgid "or take 30% off with code"
-msgstr ""
-
 #: widgets/widget-system-info.php:460
 msgid "OS/Server: "
 msgstr ""
@@ -906,6 +914,10 @@ msgstr ""
 msgid ""
 "Pro version of Dashboard Widgets Suite currently active. Free and Pro "
 "versions cannot be activated at the same time. "
+msgstr ""
+
+#: inc/settings-reset.php:49
+msgid "Pro WordPress plugins"
 msgstr ""
 
 #. Description of the plugin
@@ -1117,10 +1129,6 @@ msgstr ""
 msgid "Space between icons (in pixels)"
 msgstr ""
 
-#: inc/settings-reset.php:47
-msgid "Super Plugin Sale!"
-msgstr ""
-
 #: widgets/widget-control-panel.php:27 inc/settings-register.php:103 
 #: inc/widgets-enable.php:177 inc/settings-display.php:21
 msgid "System Info"
@@ -1128,6 +1136,10 @@ msgstr ""
 
 #: widgets/widget-system-info.php:82
 msgid "System Overview"
+msgstr ""
+
+#: inc/settings-reset.php:48
+msgid "Take 25% OFF any of our"
 msgstr ""
 
 #: widgets/widget-notes-user.php:321
