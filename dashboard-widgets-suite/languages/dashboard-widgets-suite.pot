@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dashboard Widgets Suite\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-03 22:56+0000\n"
+"POT-Creation-Date: 2025-03-18 14:31+0000\n"
 "POT-Revision-Date: Wed Aug 10 2016 17:30:58 GMT-0700 (PDT)\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
@@ -31,15 +31,15 @@ msgstr ""
 msgid " by "
 msgstr ""
 
-#: widgets/widget-log-error.php:75 widgets/widget-log-debug.php:73
+#: widgets/widget-log-debug.php:73 widgets/widget-log-error.php:75
 msgid " of "
 msgstr ""
 
-#: dashboard-widgets.php:339
+#: dashboard-widgets.php:338
 msgid " or higher, and has been deactivated!"
 msgstr ""
 
-#: widgets/widget-log-error.php:75 widgets/widget-log-debug.php:73
+#: widgets/widget-log-debug.php:73 widgets/widget-log-error.php:75
 #, php-format
 msgid "%s error."
 msgid_plural "%s errors."
@@ -62,8 +62,8 @@ msgstr ""
 msgid "Active Theme: "
 msgstr ""
 
-#: widgets/widget-notes-user.php:101 widgets/widget-notes-user.php:168 
-#: widgets/widget-notes-user.php:268 inc/resources-enqueue.php:182
+#: inc/resources-enqueue.php:182 widgets/widget-notes-user.php:101 
+#: widgets/widget-notes-user.php:168 widgets/widget-notes-user.php:268
 msgid "Add Note"
 msgstr ""
 
@@ -99,7 +99,7 @@ msgstr ""
 msgid "and"
 msgstr ""
 
-#: dashboard-widgets.php:326
+#: dashboard-widgets.php:325
 msgid "and try again."
 msgstr ""
 
@@ -107,7 +107,7 @@ msgstr ""
 msgid "Any"
 msgstr ""
 
-#: widgets/widget-notes-user.php:295 inc/settings-callbacks.php:92
+#: inc/settings-callbacks.php:92 widgets/widget-notes-user.php:295
 msgid "Any Role"
 msgstr ""
 
@@ -120,7 +120,7 @@ msgid "Apply code"
 msgstr ""
 
 #: inc/settings-reset.php:52
-msgid "at checkout. Sale ends 12/21/24."
+msgid "at checkout. Sale ends 6/25/2025."
 msgstr ""
 
 #: inc/settings-register.php:29
@@ -139,7 +139,7 @@ msgstr ""
 msgid "Browser: "
 msgstr ""
 
-#: widgets/widget-notes-user.php:202 inc/resources-enqueue.php:181
+#: inc/resources-enqueue.php:181 widgets/widget-notes-user.php:202
 msgid "Cancel"
 msgstr ""
 
@@ -147,19 +147,19 @@ msgstr ""
 msgid "Charset: "
 msgstr ""
 
-#: dashboard-widgets.php:352 dashboard-widgets.php:356
+#: dashboard-widgets.php:347 dashboard-widgets.php:351
 msgid "Cheatin&rsquo; huh?"
 msgstr ""
 
-#: inc/settings-display.php:195
+#: inc/settings-display.php:197
 msgid "Check out more WordPress resources from this developer:"
 msgstr ""
 
-#: widgets/widget-log-error.php:77 widgets/widget-log-debug.php:75
+#: widgets/widget-log-debug.php:75 widgets/widget-log-error.php:77
 msgid "Clear log file"
 msgstr ""
 
-#: dashboard-widgets.php:284
+#: dashboard-widgets.php:283
 msgid "Click here to rate and review this plugin on WordPress.org"
 msgstr ""
 
@@ -191,10 +191,6 @@ msgstr ""
 msgid "Confirm Reset"
 msgstr ""
 
-#: dashboard-widgets.php:170
-msgid "Congrats! No notes to display."
-msgstr ""
-
 #: widgets/widget-log-debug.php:120
 msgid "Congrats, debug log is empty."
 msgstr ""
@@ -203,8 +199,8 @@ msgstr ""
 msgid "Congrats, error log is empty."
 msgstr ""
 
-#: widgets/widget-control-panel.php:21 inc/settings-register.php:16 
-#: inc/widgets-enable.php:23
+#: inc/settings-register.php:16 inc/widgets-enable.php:23 
+#: widgets/widget-control-panel.php:21
 msgid "Control Panel"
 msgstr ""
 
@@ -216,7 +212,7 @@ msgstr ""
 msgid "cURL: "
 msgstr ""
 
-#: widgets/widget-log-error.php:42 widgets/widget-log-debug.php:40
+#: widgets/widget-log-debug.php:40 widgets/widget-log-error.php:42
 msgid "Current file permissions = "
 msgstr ""
 
@@ -265,8 +261,8 @@ msgstr ""
 msgid "Database: "
 msgstr ""
 
-#: widgets/widget-control-panel.php:28 inc/widgets-enable.php:45 
-#: inc/settings-display.php:22
+#: inc/settings-display.php:22 inc/widgets-enable.php:45 
+#: widgets/widget-control-panel.php:28
 msgid "Debug Log"
 msgstr ""
 
@@ -283,7 +279,7 @@ msgstr ""
 msgid "Default options restored."
 msgstr ""
 
-#: inc/settings-register.php:37 inc/settings-callbacks.php:310
+#: inc/settings-callbacks.php:310 inc/settings-register.php:37
 msgid "Delete all User Notes"
 msgstr ""
 
@@ -467,12 +463,12 @@ msgstr ""
 msgid "Enter the absolute path to your error log (ask host if unsure)"
 msgstr ""
 
-#: widgets/widget-log-error.php:126 widgets/widget-log-debug.php:124
+#: widgets/widget-log-debug.php:124 widgets/widget-log-error.php:126
 msgid "Error display disabled via widget settings."
 msgstr ""
 
-#: widgets/widget-control-panel.php:29 inc/widgets-enable.php:67 
-#: inc/settings-display.php:23
+#: inc/settings-display.php:23 inc/widgets-enable.php:67 
+#: widgets/widget-control-panel.php:29
 msgid "Error Log"
 msgstr ""
 
@@ -504,12 +500,8 @@ msgstr ""
 msgid "Facebook"
 msgstr ""
 
-#: inc/settings-reset.php:47
-msgid "Fall Sale!"
-msgstr ""
-
-#: widgets/widget-control-panel.php:23 inc/settings-register.php:42 
-#: inc/widgets-enable.php:89 inc/settings-display.php:17
+#: inc/settings-display.php:17 inc/settings-register.php:42 
+#: inc/widgets-enable.php:89 widgets/widget-control-panel.php:23
 msgid "Feed Box"
 msgstr ""
 
@@ -555,15 +547,15 @@ msgstr ""
 msgid "FTP/SSH access only"
 msgstr ""
 
-#: inc/settings-register.php:12 inc/settings-display.php:15
+#: inc/settings-display.php:15 inc/settings-register.php:12
 msgid "General Settings"
 msgstr ""
 
-#: dashboard-widgets.php:290
+#: dashboard-widgets.php:289
 msgid "Get Widgets Suite Pro!"
 msgstr ""
 
-#: dashboard-widgets.php:291
+#: dashboard-widgets.php:290
 msgid "Go&nbsp;Pro"
 msgstr ""
 
@@ -589,7 +581,7 @@ msgstr ""
 msgid "Home Page"
 msgstr ""
 
-#: dashboard-widgets.php:279
+#: dashboard-widgets.php:278
 msgid "Homepage"
 msgstr ""
 
@@ -653,7 +645,7 @@ msgstr ""
 msgid "Let me know"
 msgstr ""
 
-#: dashboard-widgets.php:308
+#: dashboard-widgets.php:307
 msgid "Like this plugin? Give it a"
 msgstr ""
 
@@ -669,8 +661,8 @@ msgstr ""
 msgid "LinkedIn"
 msgstr ""
 
-#: widgets/widget-control-panel.php:25 inc/settings-register.php:84 
-#: inc/widgets-enable.php:133 inc/settings-display.php:19
+#: inc/settings-display.php:19 inc/settings-register.php:84 
+#: inc/widgets-enable.php:133 widgets/widget-control-panel.php:25
 msgid "List Box"
 msgstr ""
 
@@ -682,7 +674,7 @@ msgstr ""
 msgid "Loaded Extensions: "
 msgstr ""
 
-#: widgets/widget-log-error.php:35 widgets/widget-log-debug.php:33
+#: widgets/widget-log-debug.php:33 widgets/widget-log-error.php:35
 msgid "Log file cleared."
 msgstr ""
 
@@ -902,15 +894,15 @@ msgstr ""
 msgid "Platform: "
 msgstr ""
 
-#: dashboard-widgets.php:326 dashboard-widgets.php:340
+#: dashboard-widgets.php:325 dashboard-widgets.php:339
 msgid "Please return to the"
 msgstr ""
 
-#: dashboard-widgets.php:278
+#: dashboard-widgets.php:277
 msgid "Plugin Homepage"
 msgstr ""
 
-#: dashboard-widgets.php:325
+#: dashboard-widgets.php:324
 msgid ""
 "Pro version of Dashboard Widgets Suite currently active. Free and Pro "
 "versions cannot be activated at the same time. "
@@ -936,7 +928,7 @@ msgstr ""
 msgid "Rate Plugin"
 msgstr ""
 
-#: dashboard-widgets.php:285
+#: dashboard-widgets.php:284
 msgid "Rate this plugin"
 msgstr ""
 
@@ -944,11 +936,11 @@ msgstr ""
 msgid "Register Globals: "
 msgstr ""
 
-#: widgets/widget-log-error.php:36 widgets/widget-log-debug.php:34
+#: widgets/widget-log-debug.php:34 widgets/widget-log-error.php:36
 msgid "Reload page"
 msgstr ""
 
-#: dashboard-widgets.php:339
+#: dashboard-widgets.php:338
 msgid "requires WordPress "
 msgstr ""
 
@@ -984,7 +976,7 @@ msgstr ""
 msgid "Safe Mode: "
 msgstr ""
 
-#: widgets/widget-notes-user.php:200 widgets/widget-control-panel.php:69
+#: widgets/widget-control-panel.php:69 widgets/widget-notes-user.php:200
 msgid "Save Changes"
 msgstr ""
 
@@ -1064,7 +1056,7 @@ msgstr ""
 msgid "Session: "
 msgstr ""
 
-#: dashboard-widgets.php:267
+#: dashboard-widgets.php:266
 msgid "Settings"
 msgstr ""
 
@@ -1092,7 +1084,7 @@ msgstr ""
 msgid "Show support with a small donation&nbsp;&raquo;"
 msgstr ""
 
-#: widgets/widget-log-error.php:75 widgets/widget-log-debug.php:73
+#: widgets/widget-log-debug.php:73 widgets/widget-log-error.php:75
 msgid "Showing the latest "
 msgstr ""
 
@@ -1120,8 +1112,8 @@ msgstr ""
 msgid "SOAP Client: "
 msgstr ""
 
-#: widgets/widget-control-panel.php:24 inc/settings-register.php:56 
-#: inc/widgets-enable.php:111 inc/settings-display.php:18
+#: inc/settings-display.php:18 inc/settings-register.php:56 
+#: inc/widgets-enable.php:111 widgets/widget-control-panel.php:24
 msgid "Social Box"
 msgstr ""
 
@@ -1129,8 +1121,12 @@ msgstr ""
 msgid "Space between icons (in pixels)"
 msgstr ""
 
-#: widgets/widget-control-panel.php:27 inc/settings-register.php:103 
-#: inc/widgets-enable.php:177 inc/settings-display.php:21
+#: inc/settings-reset.php:47
+msgid "Spring Sale!"
+msgstr ""
+
+#: inc/settings-display.php:21 inc/settings-register.php:103 
+#: inc/widgets-enable.php:177 widgets/widget-control-panel.php:27
 msgid "System Info"
 msgstr ""
 
@@ -1139,7 +1135,7 @@ msgid "System Overview"
 msgstr ""
 
 #: inc/settings-reset.php:48
-msgid "Take 25% OFF any of our"
+msgid "Take 30% OFF any of our"
 msgstr ""
 
 #: widgets/widget-notes-user.php:321
@@ -1156,12 +1152,12 @@ msgid ""
 "Dashboard serve you well."
 msgstr ""
 
-#: widgets/widget-log-error.php:41 widgets/widget-log-debug.php:39
+#: widgets/widget-log-debug.php:39 widgets/widget-log-error.php:41
 msgid ""
 "The log file could not be cleared because it is not writable by the server. "
 msgstr ""
 
-#: widgets/widget-log-error.php:134 widgets/widget-log-debug.php:132
+#: widgets/widget-log-debug.php:132 widgets/widget-log-error.php:134
 msgid "There was a problem reading the log file."
 msgstr ""
 
@@ -1218,7 +1214,7 @@ msgid ""
 " Widgets &rarr; "
 msgstr ""
 
-#: dashboard-widgets.php:340
+#: dashboard-widgets.php:339
 msgid "to upgrade WordPress and try again."
 msgstr ""
 
@@ -1270,8 +1266,8 @@ msgstr ""
 msgid "User Agent: "
 msgstr ""
 
-#: widgets/widget-control-panel.php:22 inc/settings-register.php:25 
-#: inc/widgets-enable.php:195 inc/settings-display.php:16
+#: inc/settings-display.php:16 inc/settings-register.php:25 
+#: inc/widgets-enable.php:195 widgets/widget-control-panel.php:22
 msgid "User Notes"
 msgstr ""
 
@@ -1303,16 +1299,16 @@ msgstr ""
 msgid "Want more icons/options?"
 msgstr ""
 
-#: dashboard-widgets.php:325
+#: dashboard-widgets.php:324
 msgid "Warning:"
 msgstr ""
 
-#: widgets/widget-control-panel.php:26 inc/settings-register.php:93 
-#: inc/widgets-enable.php:155 inc/settings-display.php:20
+#: inc/settings-display.php:20 inc/settings-register.php:93 
+#: inc/widgets-enable.php:155 widgets/widget-control-panel.php:26
 msgid "Widget Box"
 msgstr ""
 
-#: widgets/widget-system-info.php:29 inc/settings-register.php:74
+#: inc/settings-register.php:74 widgets/widget-system-info.php:29
 msgid "WordPress"
 msgstr ""
 
@@ -1324,7 +1320,7 @@ msgstr ""
 msgid "WordPress Time: "
 msgstr ""
 
-#: dashboard-widgets.php:326 dashboard-widgets.php:340
+#: dashboard-widgets.php:325 dashboard-widgets.php:339
 msgid "WP Admin Area"
 msgstr ""
 
@@ -1364,7 +1360,7 @@ msgstr ""
 msgid "WP Remote Post: "
 msgstr ""
 
-#: inc/settings-display.php:193
+#: inc/settings-display.php:195
 msgid "WP Resources"
 msgstr ""
 
@@ -1392,6 +1388,6 @@ msgstr ""
 msgid "Zend Engine: "
 msgstr ""
 
-#: dashboard-widgets.php:312
+#: dashboard-widgets.php:311
 msgid "★★★★★ rating&nbsp;&raquo;"
 msgstr ""

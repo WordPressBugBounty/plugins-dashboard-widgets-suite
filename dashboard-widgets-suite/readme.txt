@@ -8,10 +8,10 @@ Author: Jeff Starr
 Contributors: specialk
 Author URI: https://plugin-planet.com/
 Donate link: https://monzillamedia.com/donate.html
-Requires at least: 4.6
-Tested up to: 6.7
-Stable tag: 3.4.7
-Version:    3.4.7
+Requires at least: 4.7
+Tested up to: 6.8
+Stable tag: 3.4.8
+Version:    3.4.8
 Requires PHP: 5.6.20
 Text Domain: dashboard-widgets-suite
 Domain Path: /languages
@@ -76,7 +76,7 @@ _[Suggest a feature!](https://plugin-planet.com/support/#contact)_
 
 This plugin does not collect or store any user data. It does not set any cookies, and it does not connect to any third-party locations. Thus, this plugin does not affect user privacy in any way.
 
-Dashboard Widgets Suite is developed and maintained by [Jeff Starr](https://twitter.com/perishable), 15-year [WordPress developer](https://plugin-planet.com/) and [book author](https://books.perishablepress.com/).
+Dashboard Widgets Suite is developed and maintained by [Jeff Starr](https://x.com/perishable), 15-year [WordPress developer](https://plugin-planet.com/) and [book author](https://books.perishablepress.com/).
 
 
 
@@ -96,6 +96,7 @@ And/or purchase one of my premium WordPress plugins:
 * [Blackhole Pro](https://plugin-planet.com/blackhole-pro/) - Automatically block bad bots
 * [Banhammer Pro](https://plugin-planet.com/banhammer-pro/) - Monitor traffic and ban the bad guys
 * [GA Google Analytics Pro](https://plugin-planet.com/ga-google-analytics-pro/) - Connect WordPress to Google Analytics
+* [Head Meta Pro](https://plugin-planet.com/head-meta-pro/) - Ultimate Meta Tags for WordPress
 * [Simple Ajax Chat Pro](https://plugin-planet.com/simple-ajax-chat-pro/) - Unlimited chat rooms
 * [USP Pro](https://plugin-planet.com/usp-pro/) - Unlimited front-end forms
 
@@ -414,11 +415,15 @@ Send any questions or feedback via my [contact form](https://plugin-planet.com/s
 __Thank you__ for using Dashboard Widgets Suite! If you like the plugin, please show support with a [5-star rating &raquo;](https://wordpress.org/support/plugin/dashboard-widgets-suite/reviews/?rate=5#new-post)
 
 
-**3.4.7 (2024/10/03)**
+**3.4.8 (2025/03/18)**
 
+* Removes `load_i18n()` function
+* Adds uninstall option `dws-dismiss-notice`
+* Fixes PHP Notice re: `_load_textdomain_just_in_time`
+* Bumps minimum required WP version
 * Updates plugin settings page
-* Updates default translation template
-* Tests on WordPress 6.7 (beta)
+* Generates new language template
+* Tests on WordPress 6.8 (beta)
 
 
 Full changelog @ [https://plugin-planet.com/wp/changelog/dashboard-widgets-suite.txt](https://plugin-planet.com/wp/changelog/dashboard-widgets-suite.txt)

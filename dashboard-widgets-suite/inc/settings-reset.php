@@ -42,14 +42,14 @@ function dashboard_widgets_suite_admin_notice() {
 			
 			?>
 			
-			<div class="notice notice-success notice-margin">
+			<div class="notice notice-success notice-margin notice-custom">
 				<p>
-					<strong><?php esc_html_e('Fall Sale!', 'dashboard-widgets-suite'); ?></strong> 
-					<?php esc_html_e('Take 25% OFF any of our', 'dashboard-widgets-suite'); ?> 
+					<strong><?php esc_html_e('Spring Sale!', 'dashboard-widgets-suite'); ?></strong> 
+					<?php esc_html_e('Take 30% OFF any of our', 'dashboard-widgets-suite'); ?> 
 					<a target="_blank" rel="noopener noreferrer" href="https://plugin-planet.com/"><?php esc_html_e('Pro WordPress plugins', 'dashboard-widgets-suite'); ?></a> 
 					<?php esc_html_e('and', 'dashboard-widgets-suite'); ?> 
 					<a target="_blank" rel="noopener noreferrer" href="https://books.perishablepress.com/"><?php esc_html_e('books', 'dashboard-widgets-suite'); ?></a>. 
-					<?php esc_html_e('Apply code', 'dashboard-widgets-suite'); ?> <code>FALL2024</code> <?php esc_html_e('at checkout. Sale ends 12/21/24.', 'dashboard-widgets-suite'); ?> 
+					<?php esc_html_e('Apply code', 'dashboard-widgets-suite'); ?> <code>SPRING2025</code> <?php esc_html_e('at checkout. Sale ends 6/25/2025.', 'dashboard-widgets-suite'); ?> 
 					<?php echo dashboard_widgets_suite_dismiss_notice_link($tab); ?>
 				</p>
 			</div>
@@ -132,7 +132,7 @@ function dashboard_widgets_suite_dismiss_notice_link($tab) {
 
 function dashboard_widgets_suite_check_date_expired() {
 	
-	$expires = apply_filters('dashboard_widgets_suite_check_date_expired', '2024-12-21');
+	$expires = apply_filters('dashboard_widgets_suite_check_date_expired', '2025-06-25');
 	
 	return (new DateTime() > new DateTime($expires)) ? true : false;
 	
