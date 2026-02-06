@@ -9,9 +9,9 @@ Contributors: specialk
 Author URI: https://plugin-planet.com/
 Donate link: https://monzillamedia.com/donate.html
 Requires at least: 4.7
-Tested up to: 6.8
-Stable tag: 3.4.8
-Version:    3.4.8
+Tested up to: 6.9
+Stable tag: 3.5
+Version:    3.5
 Requires PHP: 5.6.20
 Text Domain: dashboard-widgets-suite
 Domain Path: /languages
@@ -92,7 +92,7 @@ I develop and maintain this free plugin with love for the WordPress community. T
 
 And/or purchase one of my premium WordPress plugins:
 
-* [BBQ Pro](https://plugin-planet.com/bbq-pro/) - Super fast WordPress firewall
+* [BBQ Pro](https://plugin-planet.com/bbq-pro/) - Blazing fast WordPress firewall
 * [Blackhole Pro](https://plugin-planet.com/blackhole-pro/) - Automatically block bad bots
 * [Banhammer Pro](https://plugin-planet.com/banhammer-pro/) - Monitor traffic and ban the bad guys
 * [GA Google Analytics Pro](https://plugin-planet.com/ga-google-analytics-pro/) - Connect WordPress to Google Analytics
@@ -129,7 +129,7 @@ Links, tweets and likes also appreciated. Thank you! :)
 
 Tip: you can enable/disable widgets via the plugin settings or via the Control Panel widget on the Dashboard.
 
-_[More info on installing WP plugins](https://wordpress.org/support/article/managing-plugins/#installing-plugins)_
+_[More info on installing WP plugins](https://wordpress.org/documentation/article/manage-plugins/#installing-plugins-1)_
 
 
 **Like the plugin?**
@@ -191,17 +191,16 @@ To enable both Debug Log and Error Log, follow the same steps as above, but use 
 For more information, visit [Debugging in WordPress](https://wordpress.org/support/article/debugging-in-wordpress/).
 
 
-
 **Uninstalling**
 
-Dashboard Widgets Suite cleans up after itself. All plugin settings will be removed from your database when the plugin is uninstalled via the Plugins screen.
+This plugin cleans up after itself. All plugin settings will be removed from the WordPress database when the plugin is deleted via the WP Plugins screen.
 
+__Note:__ Any notes added via the plugin's "User Notes" widget will NOT be removed from the database. To remove user notes, visit the plugin settings and click the link to "Delete all User Notes". Alternately you can delete any user notes directly via the User Notes widget on the WP Dashboard.
 
 
 **Restore Default Options**
 
 To restore default plugin options, either uninstall/reinstall the plugin or visit the General Settings &gt; Restore default plugin options.
-
 
 
 **Shortcodes**
@@ -315,11 +314,9 @@ _[Suggest a hook!](https://plugin-planet.com/support/#contact)_
 
 == Upgrade Notice ==
 
-To upgrade Dashboard Widgets Suite, remove the old version and replace with the new version. Or just click "Update" from the Plugins screen and let WordPress do it for you automatically.
+Visit the WordPress Plugins screen, locate the plugin, and click "Update" :)
 
-__Note:__ uninstalling the plugin from the WP Plugins screen results in the removal of all settings from the WP database. 
-
-__Important:__ User Notes are not deleted, so if you want to delete them, do so via the WP Dashboard before uninstalling the plugin.
+__Note:__ Deleting this plugin via the WordPress Plugins screen will remove all of its settings from the WordPress database. Note: any notes added via the plugin's "User Notes" widget will NOT be removed from the database. To remove user notes, visit the plugin settings and click the link to "Delete all User Notes". Alternately you can delete any user notes directly via the User Notes widget on the WP Dashboard.
 
 
 
@@ -415,15 +412,13 @@ Send any questions or feedback via my [contact form](https://plugin-planet.com/s
 __Thank you__ for using Dashboard Widgets Suite! If you like the plugin, please show support with a [5-star rating &raquo;](https://wordpress.org/support/plugin/dashboard-widgets-suite/reviews/?rate=5#new-post)
 
 
-**3.4.8 (2025/03/18)**
+**3.5 (2026/01/28)**
 
-* Removes `load_i18n()` function
-* Adds uninstall option `dws-dismiss-notice`
-* Fixes PHP Notice re: `_load_textdomain_just_in_time`
-* Bumps minimum required WP version
+* Fixes bug with image display
 * Updates plugin settings page
-* Generates new language template
-* Tests on WordPress 6.8 (beta)
+* Improves readme.txt documentation
+* Tests on PHP 8.4 and 8.5
+* Tests on WordPress 6.9
 
 
 Full changelog @ [https://plugin-planet.com/wp/changelog/dashboard-widgets-suite.txt](https://plugin-planet.com/wp/changelog/dashboard-widgets-suite.txt)

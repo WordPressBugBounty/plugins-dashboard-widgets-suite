@@ -174,7 +174,7 @@ function dashboard_widgets_suite_check_remote_post() {
 	$test_url = 'https://www.example.com/';
 	
 	$params = array(
-		'method'    => 'POST',
+		'method'    => 'GET',
 		'sslverify' => true,
 		'timeout'   => 60,
 		'body'      => array('test'),

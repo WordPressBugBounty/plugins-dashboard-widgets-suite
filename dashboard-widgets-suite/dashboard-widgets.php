@@ -9,9 +9,9 @@
 	Author URI: https://plugin-planet.com/
 	Donate link: https://monzillamedia.com/donate.html
 	Requires at least: 4.7
-	Tested up to: 6.8
-	Stable tag: 3.4.8
-	Version:    3.4.8
+	Tested up to: 6.9
+	Stable tag: 3.5
+	Version:    3.5
 	Requires PHP: 5.6.20
 	Text Domain: dashboard-widgets-suite
 	Domain Path: /languages
@@ -32,7 +32,7 @@
 	You should have received a copy of the GNU General Public License
 	with this program. If not, visit: https://www.gnu.org/licenses/
 	
-	Copyright 2025 Monzilla Media. All rights reserved.
+	Copyright 2016-2026 Monzilla Media. All rights reserved.
 */
 
 if (!defined('ABSPATH')) die();
@@ -54,6 +54,7 @@ if (!class_exists('Dashboard_Widgets_Suite')) {
 				
 				add_action('admin_init',          array(self::$instance, 'check_suite'));
 				add_action('admin_init',          array(self::$instance, 'check_version'));
+				add_action('init',                array(self::$instance, 'load_i18n'));
 				add_filter('plugin_action_links', array(self::$instance, 'action_links'), 10, 2);
 				add_filter('plugin_row_meta',     array(self::$instance, 'plugin_links'), 10, 2);
 				add_filter('admin_footer_text',   array(self::$instance, 'footer_text'), 10, 1);
@@ -235,7 +236,7 @@ if (!class_exists('Dashboard_Widgets_Suite')) {
 		}
 		
 		private function constants() {
-			if (!defined('DWS_VERSION')) define('DWS_VERSION', '3.4.8');
+			if (!defined('DWS_VERSION')) define('DWS_VERSION', '3.5');
 			if (!defined('DWS_REQUIRE')) define('DWS_REQUIRE', '4.7');
 			if (!defined('DWS_NAME'))    define('DWS_NAME',    'Dashboard Widgets Suite');
 			if (!defined('DWS_AUTHOR'))  define('DWS_AUTHOR',  'Jeff Starr');
@@ -341,6 +342,10 @@ if (!class_exists('Dashboard_Widgets_Suite')) {
 					}
 				}
 			}
+		}
+		
+		public function load_i18n() {
+			load_plugin_textdomain('dashboard-widgets-suite', false, dirname(DWS_FILE) .'/languages/');
 		}
 		
 		public function __clone() {
