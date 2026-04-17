@@ -9,9 +9,9 @@ Contributors: specialk
 Author URI: https://plugin-planet.com/
 Donate link: https://monzillamedia.com/donate.html
 Requires at least: 4.7
-Tested up to: 6.9
-Stable tag: 3.5
-Version:    3.5
+Tested up to: 7.0
+Stable tag: 3.5.1
+Version:    3.5.1
 Requires PHP: 5.6.20
 Text Domain: dashboard-widgets-suite
 Domain Path: /languages
@@ -66,7 +66,7 @@ Dashboard Widgets Suite provides a slick set of useful Dashboard widgets with so
 * Many options for customizing widget display
 * Works perfectly with or without Gutenberg
 
-[Check out the Screenshots](https://wordpress.org/plugins/dashboard-widgets-suite/screenshots/) for more details!
+[Check out the Screenshots](https://wordpress.org/plugins/dashboard-widgets-suite/#screenshots) for more details.
 
 _[Suggest a feature!](https://plugin-planet.com/support/#contact)_
 
@@ -97,6 +97,7 @@ And/or purchase one of my premium WordPress plugins:
 * [Banhammer Pro](https://plugin-planet.com/banhammer-pro/) - Monitor traffic and ban the bad guys
 * [GA Google Analytics Pro](https://plugin-planet.com/ga-google-analytics-pro/) - Connect WordPress to Google Analytics
 * [Head Meta Pro](https://plugin-planet.com/head-meta-pro/) - Ultimate Meta Tags for WordPress
+* [REST Pro Tools](https://plugin-planet.com/rest-pro-tools/) - Awesome tools for managing the WP REST API
 * [Simple Ajax Chat Pro](https://plugin-planet.com/simple-ajax-chat-pro/) - Unlimited chat rooms
 * [USP Pro](https://plugin-planet.com/usp-pro/) - Unlimited front-end forms
 
@@ -412,13 +413,12 @@ Send any questions or feedback via my [contact form](https://plugin-planet.com/s
 __Thank you__ for using Dashboard Widgets Suite! If you like the plugin, please show support with a [5-star rating &raquo;](https://wordpress.org/support/plugin/dashboard-widgets-suite/reviews/?rate=5#new-post)
 
 
-**3.5 (2026/01/28)**
+**3.5.1 (2026/04/17)**
 
-* Fixes bug with image display
+* Fixes bug with reset options
 * Updates plugin settings page
 * Improves readme.txt documentation
-* Tests on PHP 8.4 and 8.5
-* Tests on WordPress 6.9
+* Tests on WordPress 7.0
 
 
 Full changelog @ [https://plugin-planet.com/wp/changelog/dashboard-widgets-suite.txt](https://plugin-planet.com/wp/changelog/dashboard-widgets-suite.txt)

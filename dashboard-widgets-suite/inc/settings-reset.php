@@ -44,12 +44,12 @@ function dashboard_widgets_suite_admin_notice() {
 			
 			<div class="notice notice-success notice-lh">
 				<p>
-					<strong><?php esc_html_e('❄️ Winter Sale!', 'dashboard-widgets-suite'); ?></strong> 
-					<?php esc_html_e('Take 20% OFF any of our', 'dashboard-widgets-suite'); ?> 
+					<strong><?php esc_html_e('🌼 Spring Sale!', 'dashboard-widgets-suite'); ?></strong> 
+					<?php esc_html_e('Take 30% OFF any of our', 'dashboard-widgets-suite'); ?> 
 					<a target="_blank" rel="noopener noreferrer" href="https://plugin-planet.com/"><?php esc_html_e('Pro WordPress plugins', 'dashboard-widgets-suite'); ?></a> 
 					<?php esc_html_e('and', 'dashboard-widgets-suite'); ?> 
 					<a target="_blank" rel="noopener noreferrer" href="https://books.perishablepress.com/"><?php esc_html_e('books', 'dashboard-widgets-suite'); ?></a>. 
-					<?php esc_html_e('Apply code', 'dashboard-widgets-suite'); ?> <code>WINTER20</code> <?php esc_html_e('at checkout. Sale ends 3/28/2026.', 'dashboard-widgets-suite'); ?> 
+					<?php esc_html_e('Apply code', 'dashboard-widgets-suite'); ?> <code>SPRING30</code> <?php esc_html_e('at checkout. Sale ends 6/28/2026.', 'dashboard-widgets-suite'); ?> 
 					<?php echo dashboard_widgets_suite_dismiss_notice_link($tab); ?>
 				</p>
 			</div>
@@ -132,7 +132,7 @@ function dashboard_widgets_suite_dismiss_notice_link($tab) {
 
 function dashboard_widgets_suite_check_date_expired() {
 	
-	$expires = apply_filters('dashboard_widgets_suite_check_date_expired', '2026-03-28');
+	$expires = apply_filters('dashboard_widgets_suite_check_date_expired', '2026-06-28');
 	
 	return (new DateTime() > new DateTime($expires)) ? true : false;
 	
@@ -145,6 +145,8 @@ function dashboard_widgets_suite_reset_options() {
 	if (isset($_GET['reset-options-verify']) && wp_verify_nonce($_GET['reset-options-verify'], 'dws_reset_options')) {
 		
 		if (!current_user_can('manage_options')) exit;
+		
+		$delete_option = delete_option('dashboard-widgets-suite-dismiss-notice');
 		
 		$update_general     = update_option('dws_options_general',     Dashboard_Widgets_Suite::options_general());
 		$update_notes_user  = update_option('dws_options_notes_user',  Dashboard_Widgets_Suite::options_notes_user());
@@ -159,6 +161,7 @@ function dashboard_widgets_suite_reset_options() {
 		$result = 'false';
 		
 		if (
+			$delete_option      || 
 			$update_general     || 
 			$update_notes_user  || 
 			$update_feed_box    || 

@@ -9,9 +9,9 @@
 	Author URI: https://plugin-planet.com/
 	Donate link: https://monzillamedia.com/donate.html
 	Requires at least: 4.7
-	Tested up to: 6.9
-	Stable tag: 3.5
-	Version:    3.5
+	Tested up to: 7.0
+	Stable tag: 3.5.1
+	Version:    3.5.1
 	Requires PHP: 5.6.20
 	Text Domain: dashboard-widgets-suite
 	Domain Path: /languages
@@ -236,7 +236,7 @@ if (!class_exists('Dashboard_Widgets_Suite')) {
 		}
 		
 		private function constants() {
-			if (!defined('DWS_VERSION')) define('DWS_VERSION', '3.5');
+			if (!defined('DWS_VERSION')) define('DWS_VERSION', '3.5.1');
 			if (!defined('DWS_REQUIRE')) define('DWS_REQUIRE', '4.7');
 			if (!defined('DWS_NAME'))    define('DWS_NAME',    'Dashboard Widgets Suite');
 			if (!defined('DWS_AUTHOR'))  define('DWS_AUTHOR',  'Jeff Starr');
@@ -281,7 +281,7 @@ if (!class_exists('Dashboard_Widgets_Suite')) {
 				$links[] = '<a target="_blank" rel="noopener noreferrer" href="'. $home_href .'" title="'. $home_title .'">'. $home_text .'</a>';
 				
 				$rate_href  = 'https://wordpress.org/support/plugin/'. DWS_SLUG .'/reviews/?rate=5#new-post';
-				$rate_title = esc_attr__('Click here to rate and review this plugin on WordPress.org', 'dashboard-widgets-suite');
+				$rate_title = esc_attr__('Click here to rate and review this plugin at WordPress.org', 'dashboard-widgets-suite');
 				$rate_text  = esc_html__('Rate this plugin', 'dashboard-widgets-suite') .'&nbsp;&raquo;';
 				
 				// $links[]    = '<a target="_blank" rel="noopener noreferrer" href="'. $pro_href .'" title="'. $pro_title .'" style="'. $pro_style .'">'. $pro_text .'</a>';
@@ -322,8 +322,10 @@ if (!class_exists('Dashboard_Widgets_Suite')) {
 				if (is_plugin_active(DWS_FILE)) {
 					deactivate_plugins(DWS_FILE);
 					
-					$msg  = '<strong>'. esc_html__('Warning:', 'dashboard-widgets-suite') .'</strong> '. esc_html__('Pro version of Dashboard Widgets Suite currently active. Free and Pro versions cannot be activated at the same time. ', 'dashboard-widgets-suite') .'</br />';
-					$msg .= esc_html__('Please return to the', 'dashboard-widgets-suite') .' <a href="'. admin_url() .'">'. esc_html__('WP Admin Area', 'dashboard-widgets-suite') .'</a> '. esc_html__('and try again.', 'dashboard-widgets-suite');
+					$msg  = '<strong>'. esc_html__('Warning:', 'dashboard-widgets-suite') .'</strong> ';
+					$msg .= esc_html__('Pro version of Dashboard Widgets Suite currently active. Free and Pro versions cannot be activated at the same time. ', 'dashboard-widgets-suite');
+					$msg .= esc_html__('Please return to the', 'dashboard-widgets-suite') .' <a href="'. admin_url('plugins.php') .'">'. esc_html__('WordPress Admin Area', 'dashboard-widgets-suite') .'</a> ';
+					$msg .= esc_html__('and try again.', 'dashboard-widgets-suite');
 					
 					wp_die($msg);
 				}
@@ -336,8 +338,13 @@ if (!class_exists('Dashboard_Widgets_Suite')) {
 				if (version_compare($wp_version, DWS_REQUIRE, '<')) {
 					if (is_plugin_active(DWS_FILE)) {
 						deactivate_plugins(DWS_FILE);
-						$msg  = '<strong>'. DWS_NAME .'</strong> '. esc_html__('requires WordPress ', 'dashboard-widgets-suite') . DWS_REQUIRE . esc_html__(' or higher, and has been deactivated!', 'dashboard-widgets-suite') .'<br />';
-						$msg .= esc_html__('Please return to the', 'dashboard-widgets-suite') .' <a href="'. admin_url() .'">'. esc_html__('WP Admin Area', 'dashboard-widgets-suite') .'</a> '. esc_html__('to upgrade WordPress and try again.', 'dashboard-widgets-suite');
+						
+						$msg  = '<strong>'. DWS_NAME .'</strong> '. esc_html__('requires WordPress ', 'dashboard-widgets-suite') . DWS_REQUIRE;
+						$msg .= esc_html__(' or higher, and has been deactivated. ', 'dashboard-widgets-suite');
+						$msg .= esc_html__('Please return to the', 'dashboard-widgets-suite') .' <a href="'. admin_url('plugins.php') .'">';
+						$msg .= esc_html__('WordPress Admin Area', 'dashboard-widgets-suite') .'</a> ';
+						$msg .= esc_html__('to upgrade WordPress and try again.', 'dashboard-widgets-suite');
+						
 						wp_die($msg);
 					}
 				}
