@@ -9,9 +9,9 @@ Contributors: specialk
 Author URI: https://plugin-planet.com/
 Donate link: https://monzillamedia.com/donate.html
 Requires at least: 4.7
-Tested up to: 7.0
-Stable tag: 3.5.1
-Version:    3.5.1
+Tested up to: 7.1
+Stable tag: 3.5.2
+Version:    3.5.2
 Requires PHP: 5.6.20
 Text Domain: dashboard-widgets-suite
 Domain Path: /languages
@@ -411,6 +411,12 @@ Send any questions or feedback via my [contact form](https://plugin-planet.com/s
 == Changelog ==
 
 __Thank you__ for using Dashboard Widgets Suite! If you like the plugin, please show support with a [5-star rating &raquo;](https://wordpress.org/support/plugin/dashboard-widgets-suite/reviews/?rate=5#new-post)
+
+
+**3.5.2 (2026/07/17)**
+
+* Updates plugin settings page
+* Tests on WordPress 7.1
 
 
 **3.5.1 (2026/04/17)**
