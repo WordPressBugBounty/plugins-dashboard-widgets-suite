@@ -433,6 +433,14 @@ function dashboard_widgets_suite_get_user_agent() {
 
 function dashboard_widgets_suite_get_host_name() {
 	
+	$disable = apply_filters('dashboard_widgets_suite_get_host_name', false);
+	
+	if ($disable) {
+		
+		return;
+		
+	}
+	
 	return isset($_SERVER['REMOTE_ADDR']) ? sanitize_text_field(gethostbyaddr($_SERVER['REMOTE_ADDR'])) : 'n/a';
 	
 }

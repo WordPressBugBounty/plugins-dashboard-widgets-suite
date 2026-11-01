@@ -135,7 +135,7 @@ if (!function_exists('array_column')) {
 			
 			if (!array_key_exists($columnKey, $value)) {
 				
-				trigger_error('Key "'. $columnKey .'" does not exist in array');
+				trigger_error('Key "'. esc_html($columnKey) .'" does not exist in array');
 				
 				return false;
 				
@@ -149,7 +149,7 @@ if (!function_exists('array_column')) {
 				
 				if (!array_key_exists($indexKey, $value)) {
 					
-					trigger_error('Key "'. $indexKey .'" does not exist in array');
+					trigger_error('Key "'. esc_html($indexKey) .'" does not exist in array');
 					
 					return false;
 					
@@ -157,7 +157,7 @@ if (!function_exists('array_column')) {
 				
 				if (!is_scalar($value[$indexKey])) {
 					
-					trigger_error('Key "'. $indexKey .'" does not contain scalar value');
+					trigger_error('Key "'. esc_html($indexKey) .'" does not contain scalar value');
 					
 					return false;
 					

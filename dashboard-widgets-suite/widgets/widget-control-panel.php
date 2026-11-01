@@ -36,7 +36,7 @@ function dashboard_widgets_suite_control_panel() {
 			
 			<p>
 				<span class="fa fa-cog"></span> 
-				<a href="<?php echo admin_url('options-general.php?page=dashboard_widgets_suite'); ?>"><?php esc_html_e('Customize Widgets &rsaquo;', 'dashboard-widgets-suite'); ?></a>
+				<a href="<?php echo esc_url(admin_url('options-general.php?page=dashboard_widgets_suite')); ?>"><?php esc_html_e('Customize Widgets &rsaquo;', 'dashboard-widgets-suite'); ?></a>
 			</p>
 			
 			<?php endif; ?>
@@ -56,8 +56,8 @@ function dashboard_widgets_suite_control_panel() {
 					if (isset($value) && $value) : ?>
 						
 						<li>
-							<input name="<?php echo $name; ?>" value="1" <?php echo $checked; ?> type="checkbox"> 
-							<label for="<?php echo $name; ?>"><?php echo $label; ?></label>
+							<input name="<?php esc_attr_e($name); ?>" value="1" <?php echo wp_kses($checked, array()); ?> type="checkbox"> 
+							<label for="<?php esc_attr_e($name); ?>"><?php esc_html_e($label); ?></label>
 						</li>
 						
 					<?php endif;

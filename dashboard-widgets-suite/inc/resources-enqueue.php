@@ -140,15 +140,15 @@ function dashboard_widgets_suite_enqueue_resources_admin() {
 function dashboard_widgets_suite_get_settings_vars() {
 	
 	$data = array(
-		'reset_title'    => __('Confirm Reset',            'dashboard-widgets-suite'),
-		'reset_message'  => __('Restore default options?', 'dashboard-widgets-suite'),
-		'reset_true'     => __('Yes, make it so.',         'dashboard-widgets-suite'),
-		'reset_false'    => __('No, abort mission.',       'dashboard-widgets-suite'),
+		'reset_title'    => esc_html__('Confirm Reset',            'dashboard-widgets-suite'),
+		'reset_message'  => esc_html__('Restore default options?', 'dashboard-widgets-suite'),
+		'reset_true'     => esc_html__('Yes, make it so.',         'dashboard-widgets-suite'),
+		'reset_false'    => esc_html__('No, abort mission.',       'dashboard-widgets-suite'),
 		
-		'delete_title'   => __('Confirm Delete',           'dashboard-widgets-suite'),
-		'delete_message' => __('Delete all User Notes?',   'dashboard-widgets-suite'),
-		'delete_true'    => __('Yes, make it so.',         'dashboard-widgets-suite'),
-		'delete_false'   => __('No, abort mission.',       'dashboard-widgets-suite'),
+		'delete_title'   => esc_html__('Confirm Delete',           'dashboard-widgets-suite'),
+		'delete_message' => esc_html__('Delete all User Notes?',   'dashboard-widgets-suite'),
+		'delete_true'    => esc_html__('Yes, make it so.',         'dashboard-widgets-suite'),
+		'delete_false'   => esc_html__('No, abort mission.',       'dashboard-widgets-suite'),
 	);
 	
 	return $data;

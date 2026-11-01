@@ -44,12 +44,12 @@ function dashboard_widgets_suite_admin_notice() {
 			
 			<div class="notice notice-success notice-lh">
 				<p>
-					<strong><?php esc_html_e('☀️ Summer Sale!', 'dashboard-widgets-suite'); ?></strong> 
-					<?php esc_html_e('Take 35% OFF any of our', 'dashboard-widgets-suite'); ?> 
+					<strong><?php esc_html_e('🍁 Fall Sale!', 'dashboard-widgets-suite'); ?></strong> 
+					<?php esc_html_e('Take 25% OFF any of our', 'dashboard-widgets-suite'); ?> 
 					<a target="_blank" rel="noopener noreferrer" href="https://plugin-planet.com/"><?php esc_html_e('Pro WordPress plugins', 'dashboard-widgets-suite'); ?></a> 
 					<?php esc_html_e('and', 'dashboard-widgets-suite'); ?> 
 					<a target="_blank" rel="noopener noreferrer" href="https://books.perishablepress.com/"><?php esc_html_e('books', 'dashboard-widgets-suite'); ?></a>. 
-					<?php esc_html_e('Apply code', 'dashboard-widgets-suite'); ?> <code>SUMMER</code> <?php esc_html_e('at checkout. Sale ends 9/20/2026.', 'dashboard-widgets-suite'); ?> 
+					<?php esc_html_e('Apply code', 'dashboard-widgets-suite'); ?> <code>FALL2026</code> <?php esc_html_e('at checkout. Sale ends 12/20/2026.', 'dashboard-widgets-suite'); ?> 
 					<?php echo dashboard_widgets_suite_dismiss_notice_link($tab); ?>
 				</p>
 			</div>
@@ -110,7 +110,7 @@ function dashboard_widgets_suite_dismiss_notice_save() {
 		
 		$location = admin_url('options-general.php?page=dashboard_widgets_suite&tab='. $tab .'&dismiss-notice='. $result);
 		
-		wp_redirect($location);
+		wp_safe_redirect($location);
 		
 		exit;
 		
@@ -132,7 +132,7 @@ function dashboard_widgets_suite_dismiss_notice_link($tab) {
 
 function dashboard_widgets_suite_check_date_expired() {
 	
-	$expires = apply_filters('dashboard_widgets_suite_check_date_expired', '2026-09-20');
+	$expires = apply_filters('dashboard_widgets_suite_check_date_expired', '2026-12-20');
 	
 	return (new DateTime() > new DateTime($expires)) ? true : false;
 	
@@ -175,7 +175,7 @@ function dashboard_widgets_suite_reset_options() {
 		) $result = 'true';
 		
 		$location = admin_url('options-general.php?page=dashboard_widgets_suite&reset-options='. $result);
-		wp_redirect($location);
+		wp_safe_redirect($location);
 		exit;
 		
 	}
@@ -197,7 +197,7 @@ function dashboard_widgets_suite_delete_notes() {
 		$result = $result ? 'true' : 'false';
 		
 		$location = admin_url('options-general.php?page=dashboard_widgets_suite&tab=tab2&delete-notes='. $result);
-		wp_redirect($location);
+		wp_safe_redirect($location);
 		exit;
 		
 	}

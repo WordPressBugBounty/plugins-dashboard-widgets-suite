@@ -9,9 +9,9 @@ Contributors: specialk
 Author URI: https://plugin-planet.com/
 Donate link: https://monzillamedia.com/donate.html
 Requires at least: 4.7
-Tested up to: 7.1
-Stable tag: 3.5.2
-Version:    3.5.2
+Tested up to: 7.2
+Stable tag: 3.6
+Version:    3.6
 Requires PHP: 5.6.20
 Text Domain: dashboard-widgets-suite
 Domain Path: /languages
@@ -413,18 +413,17 @@ Send any questions or feedback via my [contact form](https://plugin-planet.com/s
 __Thank you__ for using Dashboard Widgets Suite! If you like the plugin, please show support with a [5-star rating &raquo;](https://wordpress.org/support/plugin/dashboard-widgets-suite/reviews/?rate=5#new-post)
 
 
-**3.5.2 (2026/07/17)**
+**3.6 (2026/11/01)**
 
+* Adds filter hook to disable `gethostbyaddr()`
+* Improves security of plugin settings page
+* Improves sanitization of WP dashboard widgets
+* Improves sanitization of JavaScript output
+* Improves security of admin redirects
+* Improves security of plugin files
 * Updates plugin settings page
-* Tests on WordPress 7.1
-
-
-**3.5.1 (2026/04/17)**
-
-* Fixes bug with reset options
-* Updates plugin settings page
-* Improves readme.txt documentation
-* Tests on WordPress 7.0
+* Improves plugin documentation
+* Tests on WordPress 7.2
 
 
 Full changelog @ [https://plugin-planet.com/wp/changelog/dashboard-widgets-suite.txt](https://plugin-planet.com/wp/changelog/dashboard-widgets-suite.txt)

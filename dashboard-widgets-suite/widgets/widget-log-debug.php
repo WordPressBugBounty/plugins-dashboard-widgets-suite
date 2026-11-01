@@ -70,13 +70,14 @@ function dashboard_widgets_suite_log_debug() {
 			
 			$item_count = ($count < $error_limit) ? $count : $error_limit;
 			
-			echo '<p><span class="fa fa-search"></span> '. esc_html__('Showing the latest ', 'dashboard-widgets-suite') . $item_count . esc_html__(' of ', 'dashboard-widgets-suite') . sprintf(_n('%s error.', '%s errors.', $lines, 'dashboard-widgets-suite'), $lines);
+			echo '<p><span class="fa fa-search"></span> '. esc_html__('Showing the latest ', 'dashboard-widgets-suite') . esc_html($item_count) . esc_html__(' of ', 'dashboard-widgets-suite');
+			echo sprintf(_n('%s error.', '%s errors.', esc_html($lines), 'dashboard-widgets-suite'), esc_html($lines));
 			
-			if ($user_level) echo ' <a href="'. $href .'" onclick="return confirm(\'Are you sure?\');">'. esc_html__('Clear log file', 'dashboard-widgets-suite') .'</a> &#8634;'; // fa-undo
+			if ($user_level) echo ' <a href="'. esc_url($href) .'" onclick="return confirm(\'Are you sure?\');">'. esc_html__('Clear log file', 'dashboard-widgets-suite') .'</a> &#8634;'; // fa-undo
 			
-			echo '</p>'; 
+			echo '</p>';
 			
-			echo '<div class="dws-log" style="height:'. $error_height .'px;">';
+			echo '<div class="dws-log" style="height:'. esc_attr($error_height) .'px;">';
 			echo '<ol>';
 			
 			$i = 0;
@@ -92,11 +93,11 @@ function dashboard_widgets_suite_log_debug() {
 					
 					if (strlen($error) > $error_length) {
 						
-						echo substr($error, 0, $error_length) .' [...]';
+						echo substr(esc_html($error), 0, esc_html($error_length)) .' [...]';
 						
 					} else {
 						
-						echo $error;
+						echo esc_html($error);
 						
 					}
 					

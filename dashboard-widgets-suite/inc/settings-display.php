@@ -63,8 +63,8 @@ function dashboard_widgets_suite_display_settings() {
 	
 	?>
 	
-	<div class="wrap wrap-<?php echo $tab_active; ?>">
-		<h1><span class="fa fa-pad fa-th"></span> <?php echo DWS_NAME; ?> <span class="dws-version"><?php echo DWS_VERSION; ?></span></h1>
+	<div class="wrap wrap-<?php echo esc_attr($tab_active); ?>">
+		<h1><span class="fa fa-pad fa-th"></span> <?php echo esc_html(DWS_NAME); ?> <span class="dws-version"><?php echo esc_html(DWS_VERSION); ?></span></h1>
 		<h2 class="nav-tab-wrapper">
 			
 			<?php 
@@ -73,7 +73,7 @@ function dashboard_widgets_suite_display_settings() {
 					
 					$active = ($tab_active === $key) ? ' nav-tab-active' : '';
 					
-					echo '<a href="'. $tab_href .'&tab='. $key .'" class="nav-tab nav-'. $key . $active .'">'. $value .'</a>';
+					echo '<a href="'. esc_url($tab_href .'&tab='. $key) .'" class="nav-tab nav-'. esc_attr($key) . esc_attr($active) .'">'. esc_html($value) .'</a>';
 					
 				}
 				

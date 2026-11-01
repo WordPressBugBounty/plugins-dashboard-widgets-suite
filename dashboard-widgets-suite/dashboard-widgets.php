@@ -9,9 +9,9 @@
 	Author URI: https://plugin-planet.com/
 	Donate link: https://monzillamedia.com/donate.html
 	Requires at least: 4.7
-	Tested up to: 7.1
-	Stable tag: 3.5.2
-	Version:    3.5.2
+	Tested up to: 7.2
+	Stable tag: 3.6
+	Version:    3.6
 	Requires PHP: 5.6.20
 	Text Domain: dashboard-widgets-suite
 	Domain Path: /languages
@@ -236,7 +236,7 @@ if (!class_exists('Dashboard_Widgets_Suite')) {
 		}
 		
 		private function constants() {
-			if (!defined('DWS_VERSION')) define('DWS_VERSION', '3.5.2');
+			if (!defined('DWS_VERSION')) define('DWS_VERSION', '3.6');
 			if (!defined('DWS_REQUIRE')) define('DWS_REQUIRE', '4.7');
 			if (!defined('DWS_NAME'))    define('DWS_NAME',    'Dashboard Widgets Suite');
 			if (!defined('DWS_AUTHOR'))  define('DWS_AUTHOR',  'Jeff Starr');
@@ -356,11 +356,11 @@ if (!class_exists('Dashboard_Widgets_Suite')) {
 		}
 		
 		public function __clone() {
-			_doing_it_wrong(__FUNCTION__, esc_html__('Cheatin&rsquo; huh?', 'dashboard-widgets-suite'), DWS_VERSION);
+			_doing_it_wrong(__FUNCTION__, esc_html__('Cheatin&rsquo; huh?', 'dashboard-widgets-suite'), esc_html(DWS_VERSION));
 		}
 		
 		public function __wakeup() {
-			_doing_it_wrong(__FUNCTION__, esc_html__('Cheatin&rsquo; huh?', 'dashboard-widgets-suite'), DWS_VERSION);
+			_doing_it_wrong(__FUNCTION__, esc_html__('Cheatin&rsquo; huh?', 'dashboard-widgets-suite'), esc_html(DWS_VERSION));
 		}
 		
 	}

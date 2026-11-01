@@ -185,12 +185,12 @@ function dashboard_widgets_suite_callback_select($args) {
 		
 	}
 	
-	echo '<select name="'. $setting .'['. $id .']">';
+	echo '<select name="'. esc_attr($setting) .'['. esc_attr($id) .']">';
 	
 	foreach ($options_array as $option) {
-		echo '<option '. selected($option['value'], $value, false) .' value="'. $option['value'] .'">'. $option['label'] .'</option>';
+		echo '<option '. selected($option['value'], $value, false) .' value="'. esc_attr($option['value']) .'">'. esc_html($option['label']) .'</option>';
 	}
-	echo '</select> <label class="dws-label inline-block" for="'. $setting .'['. $id .']">'. $label .'</label>';
+	echo '</select> <label class="dws-label inline-block" for="'. esc_attr($setting) .'['. esc_attr($id) .']">'. esc_html($label) .'</label>';
 	
 }
 
@@ -221,8 +221,8 @@ function dashboard_widgets_suite_callback_text($args) {
 		
 	}
 	
-	echo '<input name="'. $setting .'['. $id .']" class="'. $class_input .'" type="text" size="40" value="'. $value .'"> ';
-	echo '<label  for="'. $setting .'['. $id .']" class="'. $class_label .'">'. $label .'</label>';
+	echo '<input name="'. esc_attr($setting) .'['. esc_attr($id) .']" class="'. esc_attr($class_input) .'" type="text" size="40" value="'. esc_attr($value) .'"> ';
+	echo '<label  for="'. esc_attr($setting) .'['. esc_attr($id) .']" class="'. esc_attr($class_label) .'">'. esc_html($label) .'</label>';
 	
 }
 
@@ -243,8 +243,8 @@ function dashboard_widgets_suite_callback_textarea($args) {
 	
 	$value = isset($options[$id]) ? wp_kses(stripslashes_deep($options[$id]), $allowed_tags) : '';
 	
-	echo '<textarea name="'. $setting .'['. $id .']" rows="3" cols="50">'. $value .'</textarea> ';
-	echo '<label for="'. $setting .'['. $id .']" class="dws-label" >'. $label .'</label>';
+	echo '<textarea name="'. esc_attr($setting) .'['. esc_attr($id) .']" rows="3" cols="50">'. esc_html($value) .'</textarea> ';
+	echo '<label for="'. esc_attr($setting) .'['. esc_attr($id) .']" class="dws-label" >'. esc_html($label) .'</label>';
 	
 }
 
@@ -263,8 +263,8 @@ function dashboard_widgets_suite_callback_checkbox($args) {
 	
 	$checked = isset($options[$id]) ? checked($options[$id], 1, false) : '';
 	
-	echo '<input name="'. $setting .'['. $id .']" value="1" type="checkbox" '. $checked .'> ';
-	echo '<label for="'. $setting .'['. $id .']" class="dws-label inline-block">'. $label .'</label>';
+	echo '<input name="'. esc_attr($setting) .'['. esc_attr($id) .']" value="1" type="checkbox" '. wp_kses($checked, array()) .'> ';
+	echo '<label for="'. esc_attr($setting) .'['. esc_attr($id) .']" class="dws-label inline-block">'. esc_html($label) .'</label>';
 	
 }
 
@@ -286,8 +286,8 @@ function dashboard_widgets_suite_callback_number($args) {
 	$min = 0;
 	$max = ($id === 'dashboard_columns') ? 4 : 999;
 	
-	echo '<input name="'. $setting .'['. $id .']" type="number" class="small-text" min="'. $min .'" max="'. $max .'" value="'. $value .'"> ';
-	echo '<label for="'. $setting .'['. $id .']" class="dws-label inline-block">'. $label .'</label>';
+	echo '<input name="'. esc_attr($setting) .'['. esc_attr($id) .']" type="number" class="small-text" min="'. esc_attr($min) .'" max="'. esc_attr($max) .'" value="'. esc_attr($value) .'"> ';
+	echo '<label for="'. esc_attr($setting) .'['. esc_attr($id) .']" class="dws-label inline-block">'. esc_html($label) .'</label>';
 	
 }
 
@@ -295,9 +295,9 @@ function dashboard_widgets_suite_callback_reset($args) {
 	
 	$nonce = wp_create_nonce('dws_reset_options');
 	$url   = admin_url('options-general.php?page=dashboard_widgets_suite');
-	$href  = esc_url(add_query_arg(array('reset-options-verify' => $nonce), $url));
+	$href  = add_query_arg(array('reset-options-verify' => $nonce), $url);
 	
-	echo '<a class="dws-reset-options" href="'. $href .'">'. esc_html__('Restore default plugin options', 'dashboard-widgets-suite') .'</a>';
+	echo '<a class="dws-reset-options" href="'. esc_url($href) .'">'. esc_html__('Restore default plugin options', 'dashboard-widgets-suite') .'</a>';
 	
 }
 
@@ -305,28 +305,28 @@ function dashboard_widgets_suite_callback_delete($args) {
 	
 	$nonce = wp_create_nonce('dws_delete_notes');
 	$url   = admin_url('options-general.php?page=dashboard_widgets_suite');
-	$href  = esc_url(add_query_arg(array('delete-notes-verify' => $nonce), $url));
+	$href  = add_query_arg(array('delete-notes-verify' => $nonce), $url);
 	
-	echo '<a class="dws-delete-notes" href="'. $href .'">'. esc_html__('Delete all User Notes', 'dashboard-widgets-suite') .'</a>';
+	echo '<a class="dws-delete-notes" href="'. esc_url($href) .'">'. esc_html__('Delete all User Notes', 'dashboard-widgets-suite') .'</a>';
 	
 }
 
 function dashboard_widgets_suite_callback_rate($args) {
 	
 	$href  = 'https://wordpress.org/support/plugin/'. DWS_SLUG .'/reviews/?rate=5#new-post';
-	$title = esc_attr__('Help keep Dashboard Widgets Suite going strong! A huge THANK YOU for your support!', 'dashboard-widgets-suite');
-	$text  = isset($args['label']) ? $args['label'] : esc_html__('Show support with a 5-star rating&nbsp;&raquo;', 'dashboard-widgets-suite');
+	$title = __('Help keep Dashboard Widgets Suite going strong! A huge THANK YOU for your support!', 'dashboard-widgets-suite');
+	$text  = isset($args['label']) ? $args['label'] : __('Show support with a 5-star rating&nbsp;&raquo;', 'dashboard-widgets-suite');
 	
-	echo '<a target="_blank" rel="noopener noreferrer" class="dws-rate-plugin" href="'. $href .'" title="'. $title .'">'. $text .'</a>';
+	echo '<a target="_blank" rel="noopener noreferrer" class="dws-rate-plugin" href="'. esc_url($href) .'" title="'. esc_attr($title) .'">'. esc_html($text) .'</a>';
 	
 }
 
 function dashboard_widgets_suite_callback_support($args) {
 	
 	$href  = 'https://monzillamedia.com/donate.html';
-	$title = esc_attr__('Donate via PayPal, credit card, or cryptocurrency', 'dashboard-widgets-suite');
-	$text  = isset($args['label']) ? $args['label'] : esc_html__('Show support with a small donation&nbsp;&raquo;', 'dashboard-widgets-suite');
+	$title = __('Donate via PayPal, credit card, or cryptocurrency', 'dashboard-widgets-suite');
+	$text  = isset($args['label']) ? $args['label'] : __('Show support with a small donation&nbsp;&raquo;', 'dashboard-widgets-suite');
 	
-	echo '<a target="_blank" rel="noopener noreferrer" class="dws-show-support" href="'. $href .'" title="'. $title .'">'. $text .'</a>';
+	echo '<a target="_blank" rel="noopener noreferrer" class="dws-show-support" href="'. esc_url($href) .'" title="'. esc_attr($title) .'">'. esc_html($text) .'</a>';
 	
 }
