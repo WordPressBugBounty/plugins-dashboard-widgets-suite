@@ -193,7 +193,7 @@ function dashboard_widgets_suite_notes_user_form_edit($id, $date, $name, $role, 
 	
 	$form .= '<label for="note">'. esc_html__('Note', 'dashboard-widgets-suite') .'</label>';
 	$form .= '<textarea name="dws-notes-user[note]"'. dashboard_widgets_suite_notes_user_style() .' data-key="'. intval($key + 1) .'" data-rows="3" rows="3" cols="50" ';
-	$form .= 'class="dws-hidden" placeholder="'. esc_attr__('Enter some notes..', 'dashboard-widgets-suite') .'">'. $note .'</textarea>';
+	$form .= 'class="dws-hidden" placeholder="'. esc_attr__('Enter some notes..', 'dashboard-widgets-suite') .'">'. esc_textarea($note) .'</textarea>';
 	$form .= '<div '. dashboard_widgets_suite_notes_user_style() .' class="dws-notes-user-note" data-key="'. intval($key + 1) .'"></div>';
 	
 	$form .= '<div class="dws-notes-user-buttons dws-hidden">';
@@ -225,7 +225,7 @@ function dashboard_widgets_suite_notes_user_form_view($id, $date, $name, $time, 
 	$form .= '<em>'. esc_html__(' &ndash; ', 'dashboard-widgets-suite') . $name .', <span class="dws-info" title="'. $time .'">'. $date .'</span></em>';
 	$form .= '</div>';
 	
-	$form .= '<div '. dashboard_widgets_suite_notes_user_style() .' class="dws-notes-user-note">'. $note .'</div>';
+	$form .= '<div '. dashboard_widgets_suite_notes_user_style() .' class="dws-notes-user-note">'. esc_html($note) .'</div>';
 	
 	$form .= '</div>';
 	

@@ -106,7 +106,7 @@ function dashboard_widgets_suite_notes_user_submit() {
 		$role   = isset($_POST['dws-notes-user']['role'])   ? sanitize_text_field($_POST['dws-notes-user']['role']) : '';
 		$title  = isset($_POST['dws-notes-user']['title'])  ? sanitize_text_field(stripslashes_deep($_POST['dws-notes-user']['title'])) : '';
 		$format = isset($_POST['dws-notes-user']['format']) ? sanitize_text_field($_POST['dws-notes-user']['format']) : 'text';
-		$note   = isset($_POST['dws-notes-user']['note'])   ? stripslashes_deep($_POST['dws-notes-user']['note']) : '';
+		$note   = isset($_POST['dws-notes-user']['note'])   ? stripslashes_deep(wp_kses_post($_POST['dws-notes-user']['note'])) : '';
 		
 		list($date, $time) = dashboard_widgets_suite_get_date();
 		

@@ -10,8 +10,8 @@
 	Donate link: https://monzillamedia.com/donate.html
 	Requires at least: 4.7
 	Tested up to: 7.2
-	Stable tag: 3.6
-	Version:    3.6
+	Stable tag: 3.6.1
+	Version:    3.6.1
 	Requires PHP: 5.6.20
 	Text Domain: dashboard-widgets-suite
 	Domain Path: /languages
@@ -236,7 +236,7 @@ if (!class_exists('Dashboard_Widgets_Suite')) {
 		}
 		
 		private function constants() {
-			if (!defined('DWS_VERSION')) define('DWS_VERSION', '3.6');
+			if (!defined('DWS_VERSION')) define('DWS_VERSION', '3.6.1');
 			if (!defined('DWS_REQUIRE')) define('DWS_REQUIRE', '4.7');
 			if (!defined('DWS_NAME'))    define('DWS_NAME',    'Dashboard Widgets Suite');
 			if (!defined('DWS_AUTHOR'))  define('DWS_AUTHOR',  'Jeff Starr');

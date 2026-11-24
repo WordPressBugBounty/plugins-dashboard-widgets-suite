@@ -10,8 +10,8 @@ Author URI: https://plugin-planet.com/
 Donate link: https://monzillamedia.com/donate.html
 Requires at least: 4.7
 Tested up to: 7.2
-Stable tag: 3.6
-Version:    3.6
+Stable tag: 3.6.1
+Version:    3.6.1
 Requires PHP: 5.6.20
 Text Domain: dashboard-widgets-suite
 Domain Path: /languages
@@ -413,16 +413,9 @@ Send any questions or feedback via my [contact form](https://plugin-planet.com/s
 __Thank you__ for using Dashboard Widgets Suite! If you like the plugin, please show support with a [5-star rating &raquo;](https://wordpress.org/support/plugin/dashboard-widgets-suite/reviews/?rate=5#new-post)
 
 
-**3.6 (2026/11/01)**
+**3.6.1 (2026/11/24)**
 
-* Adds filter hook to disable `gethostbyaddr()`
-* Improves security of plugin settings page
-* Improves sanitization of WP dashboard widgets
-* Improves sanitization of JavaScript output
-* Improves security of admin redirects
-* Improves security of plugin files
-* Updates plugin settings page
-* Improves plugin documentation
+* Improves sanitization of Notes widget
 * Tests on WordPress 7.2
 
 
